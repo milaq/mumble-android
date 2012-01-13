@@ -400,6 +400,8 @@ public class MumbleService extends Service {
 	public static final String EXTRA_USERNAME = "mumbleclient.extra.USERNAME";
 	public static final String EXTRA_PASSWORD = "mumbleclient.extra.PASSWORD";
 	public static final String EXTRA_USER = "mumbleclient.extra.USER";
+	public static final String EXTRA_KEYSTORE_FILE = "mumbleclient.extra.KEYSTORE_FILE";
+	public static final String EXTRA_KEYSTORE_PASSWORD = "mumbleclient.extra.KEYSTORE_PASSWORD";
 
 	private Settings settings;
 	
@@ -628,7 +630,9 @@ public class MumbleService extends Service {
 		final int port = intent.getIntExtra(EXTRA_PORT, -1);
 		final String username = intent.getStringExtra(EXTRA_USERNAME);
 		final String password = intent.getStringExtra(EXTRA_PASSWORD);
-		
+		final String keystoreFile = intent.getStringExtra(EXTRA_KEYSTORE_FILE);
+		final String keystorePassword = intent.getStringExtra(EXTRA_KEYSTORE_PASSWORD);
+
 		// set a class wide string for notification
 		this.connectedServerString = host+":"+port;
 
@@ -649,7 +653,9 @@ public class MumbleService extends Service {
 			host,
 			port,
 			username,
-			password);
+			password,
+			keystoreFile,
+			keystorePassword);
 
 		mProtocol = new MumbleProtocol(
 			mProtocolHost,
