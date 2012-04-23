@@ -1,0 +1,18 @@
+yesterday, an email arrived telling me that most of this code was reused and published to the android market. usually, i am cool with that.
+but unfortunately the douche who published this stated that it was HIS work. this is unacceptable.
+
+this is NOT what open-source is about. i (and we, the other devs) do this solely in my/our free time - for free. and the least thing one could do is to INFORM the developers
+who actually worked on this and PROPERLY give credit to them while CLEARLY stating that he/she just compiled the code.
+
+i have absolutely NO PROBLEM when someone reuses my code (this is what opensource is about).
+but that does NOT mean that one should forget good manners.
+
+well now, what does that mean now?
+that means that i will only release my changes publicly at the point at which i release a binary/compiled version.
+i had various commits lingering around in my local git and am developing more.
+for now, i will use a private git for check-ins to the mumble-android project.
+
+if you are a serious developer who wants to view/work with those commits, you can contact me and ask for insight and i will give you read access to my private git.
+
+regards,
+michael
